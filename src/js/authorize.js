@@ -24,7 +24,11 @@ export function Authorize(){
             await updateProfile(user, {
                 displayName:fullname, 
                 photoURL: defaultprofileimg
-            }).then(() => {                
+            }).then(() => {   
+                
+                // set name from localstorage
+                setLocalName(fullname);
+
                 // Redirect to index.html
                 window.location.href = "../index.html";
             });
