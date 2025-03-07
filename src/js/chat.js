@@ -108,7 +108,7 @@ export function Chatroom(room,username){
                 console.log("Error deleting message : ", error);
             }
 
-        },1000);
+        },15000);
 
     }
 
